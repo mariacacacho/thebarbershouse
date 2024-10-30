@@ -49,7 +49,7 @@ const Menu = () => {
         </Box>
         <Box sx={menuSection}>
           <AssignmentIcon fontSize="small" />
-          <p>Tasks</p>
+          <p>Citas</p>
         </Box>
       </MenuSections>
       </div>

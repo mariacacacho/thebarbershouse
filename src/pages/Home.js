@@ -1,8 +1,7 @@
 import { Grid2, Item } from "@mui/material";
 import Menu from "../components/Menu/Menu";
 import HeaderBanner from "../components/HeaderBanner/HeaderBanner";
-import { Routes, Route } from 'react-router-dom'
-import Overview from "./Overview";
+import Content from "./Content.js";
 
 const Home = () => {
   return (
@@ -15,7 +14,7 @@ const Home = () => {
           <HeaderBanner />
         </Grid2>
         <Grid2 size={12}>
-          <Overview />
+          <Content />
         </Grid2>
       </Grid2>
     </Grid2>

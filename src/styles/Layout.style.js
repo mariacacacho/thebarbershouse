@@ -9,6 +9,7 @@ export const LayoutContainer = styled.div`
   font-family: 'Roboto', sans-serif;
   margin: auto;
   overflow: hidden;
+  background-color: #FCFCFC;
 
   @media (max-width: 550px) {
     /* Phones */
@@ -20,4 +21,6 @@ export const LayoutContainer = styled.div`
     font-size: 0.9em;
   }
 `
-
+export const ContentLayout = styled.div`
+  margin: 20px 30px 20px 20px;
+`
