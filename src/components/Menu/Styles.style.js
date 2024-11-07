@@ -3,10 +3,17 @@ import styled from 'styled-components'
 export const MenuLayout = styled.div`
   border-right: 1px solid #EFEFEF;
   height: 99.9vh;
-  background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `
 
 export const AppTitle = styled.div`
@@ -31,10 +38,10 @@ export const AppTitle = styled.div`
 `
 
 export const MenuSections = styled.div`
-  border-top: 1px solid #EFEFEF;
   padding-top: 10px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   margin-top: 15px;
+  color: #637381;
 `
 
 export const UserAvatar = styled.div`
@@ -70,8 +77,6 @@ export const boxTitleMenu = {
 
 export const menuSection = {
   borderRadius: 1.7,
-  paddingTop: 1,
-  paddingBottom: 1,
   paddingLeft: 1,
   display: "flex",
   alignItems: "center",
@@ -79,26 +84,33 @@ export const menuSection = {
     bgcolor: "#EFEFEF",
   },
   marginLeft: 1,
-  marginTop: 0.3,
   marginRight: 1,
   "p:nth-child(2)": {
     marginLeft: '10px'
+  },
+  "p":{
+    paddingTop: '12px',
+    paddingBottom: '12px',
+    marginTop: '6px'
   }
 }
 
 export const menuSectionSelected = {
   borderRadius: 1.7,
-  bgcolor: "#EFEFEF",
-  paddingTop: 1,
-  paddingBottom: 1,
+  bgcolor: "#00A76F14",
   paddingLeft: 1,
   display: "flex",
   alignItems: "center",
   marginLeft: 1,
-  marginTop: 0.3,
   marginRight: 1,
   "p:nth-child(2)": {
     marginLeft: '10px'
   },
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  color: '#00A76F',
+  "p":{
+    paddingTop: '12px',
+    paddingBottom: '12px',
+    marginTop: '8px'
+  }
 }

@@ -16,7 +16,7 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import Avatar from "@mui/material/Avatar";
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <MenuLayout>
       <div>
@@ -28,26 +28,26 @@ const Menu = () => {
           <Grid2 size={9} sx={{ display: "flex", justifyContent: "center" }}>
             <AppTitle>
               <p>The Barber's House</p>
-              <p>Dashboard</p>
+              <p>Admin</p>
             </AppTitle>
           </Grid2>
         </Grid2>
       </Box>
 
       <MenuSections>
-        <Box sx={menuSectionSelected}>
+        <Box sx={menuSectionSelected} onClick={() => props.setSection('Overview')}>
           <HomeIcon fontSize="small" />
-          <p>Dashboard</p>
+          <p>Overview</p>
         </Box>
-        <Box sx={menuSection}>
-          <PeopleIcon fontSize="small" />
+        <Box sx={menuSection} onClick={() => props.setSection('Clientes')}>
+          <PeopleIcon fontSize="small"/>
           <p>Clientes</p>
         </Box>
-        <Box sx={menuSection}>
-          <ShoppingBagIcon fontSize="small" />
+        <Box sx={menuSection} onClick={() => props.setSection('Productos')}>
+          <ShoppingBagIcon fontSize="small"/>
           <p>Productos</p>
         </Box>
-        <Box sx={menuSection}>
+        <Box sx={menuSection} onClick={() => props.setSection('Citas')}>
           <AssignmentIcon fontSize="small" />
           <p>Citas</p>
         </Box>

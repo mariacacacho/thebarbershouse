@@ -33,11 +33,11 @@ const rows = [
   { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
 
-const paginationModel = { page: 0, pageSize: 5 };
+const paginationModel = { page: 0, pageSize: 6 };
 
-export default function DataTable() {
+const DataTable = () => {
   return (
-    <Paper sx={{ height: 400, width: '100%' }}>
+    <Paper sx={{ height: 'auto', width: '100%', borderRadius: '16px', boxShadow: 'rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;' }}>
       <DataGrid
         rows={rows}
         columns={columns}
@@ -49,3 +49,5 @@ export default function DataTable() {
     </Paper>
   );
 }
+
+export default DataTable;

@@ -9,7 +9,7 @@ export const LayoutContainer = styled.div`
   font-family: 'Roboto', sans-serif;
   margin: auto;
   overflow: hidden;
-  background-color: #FCFCFC;
+  background-color: white;
 
   @media (max-width: 550px) {
     /* Phones */
