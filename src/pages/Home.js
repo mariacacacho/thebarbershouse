@@ -6,7 +6,7 @@ import Content from "./Content.js";
 
 const Home = () => {
 
-  const [section, setSection] = useState("Dashboard");
+  const [section, setSection] = useState("Overview");
 
   return (
     <Grid2 container spacing={2}>
@@ -17,7 +17,7 @@ const Home = () => {
         <Grid2 size={12}>
           <HeaderBanner section={section}/>
         </Grid2>
-        <Grid2 size={12}>
+        <Grid2 size={12} sx={{overflowY: 'scroll', height: '89vh'}}>
           {section === "Overview" ? (
             <Content />
           ):(

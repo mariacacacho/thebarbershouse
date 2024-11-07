@@ -22,5 +22,5 @@ export const LayoutContainer = styled.div`
   }
 `
 export const ContentLayout = styled.div`
-  margin: 20px 30px 20px 20px;
+  margin: 0px 30px 20px 20px;
 `

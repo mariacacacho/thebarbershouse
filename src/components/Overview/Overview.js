@@ -68,9 +68,6 @@ const Overview = () => {
           <ProductsChart />
         </Grid2>
       </Grid2>
-      <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
-        Details
-      </Typography>
       <Grid2 container spacing={2} columns={12}>
         <Grid2 size={{ xs: 12, lg: 9 }}>
           <DataTable />

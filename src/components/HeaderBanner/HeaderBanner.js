@@ -11,7 +11,7 @@ const getDate = () => {
 }
 
 const HeaderBanner = (props) => {
-  const [currentDate, setCurrentDate] = useState(getDate());
+  const currentDate = getDate();
 
   return (
     <HeaderBannerLayout>

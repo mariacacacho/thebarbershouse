@@ -23,7 +23,7 @@ export const BoxContainer = styled.div`
 
 export const SectionTitle = styled.p`
     font-size: 1.25rem;
-    margin: 16px 0;
+    margin-bottom: 16px;
     font-weight: bold;
 `
 

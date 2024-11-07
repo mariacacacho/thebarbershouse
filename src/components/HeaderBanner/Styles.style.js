@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderBannerLayout = styled.div`
-  padding: 20px 30px 0 20px;
+  padding: 20px 30px 20px 20px;
   display: flex;
   justify-content: space-between;
 `

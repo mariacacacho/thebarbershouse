@@ -82,6 +82,7 @@ export const menuSection = {
   alignItems: "center",
   "&:hover": {
     bgcolor: "#EFEFEF",
+    cursor: 'pointer'
   },
   marginLeft: 1,
   marginRight: 1,
@@ -112,5 +113,8 @@ export const menuSectionSelected = {
     paddingTop: '12px',
     paddingBottom: '12px',
     marginTop: '8px'
+  },
+  "&:hover": {
+    cursor: 'pointer'
   }
 }
